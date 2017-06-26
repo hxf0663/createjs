@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/easeljs-0.8.2.min.js"></script>
+    <script src="js/tweenjs-0.6.2.min.js"></script>
+    <script src="js/soundjs-0.6.2.min.js"></script>
+    <script src="js/preloadjs-0.6.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/CSSPlugin.js"></script>
+    <script src="js/Ease.js"></script>
+    <script src="js/MotionGuidePlugin.js"></script>
+	<!--<script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_7A3E4635DBFCBBD9"></script>-->
+	<style>
+	@font-face {
+	  font-family: 'font1';
+	  src: url('汉仪菱心体简.eot');
+	  src: url('汉仪菱心体简.eot?#iefix') format('embedded-opentype'),
+	   url('汉仪菱心体简.woff') format('woff'),
+	   url('汉仪菱心体简.ttf') format('truetype'),
+	   url('汉仪菱心体简.svg') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	</style>
+	<script src="js/loading.js"></script>
+</head>
+<body>
+    <div id="mask"></div>
+    <div class="container">
+        <div id="div1" style="background-color:yellow; width: 200px; height: 100px; position: relative;">
+			<span id="webfont" style="font-family:font1; color:white; text-shadow: 5px 5px 5px #000;">德彪钢笔行书</span>
+            <button id="popup">弹出</button>
+        </div>
+        <div class="box" id="pop1">
+            <div class="close"></div>
+            <br /><br /><br /><br />
+        </div>
+        <canvas id="gameView" width="640px" height="800px" style="background-color: #ccc"></canvas>
+        <script src="js/app.js"></script>
+    </div>
+	<script type="text/javascript">
+	//$youziku.load("#webfont", "8688244f926840aca48a3f588dafade5", "LiDeBiao-Xing3");
+	//$youziku.draw();
+	$('#webfont').text('我是中国人');
+	</script>
+</body>
+</html>
